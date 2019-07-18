@@ -1,0 +1,92 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source /home/lzc/document/Xilinx/Vivado/2019.1/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/home/lzc/document/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'lzc' on host 'lzc-VirtualBox' (Linux_x86_64 version 4.15.0-29-generic) on Thu Jul 18 09:02:53 CST 2019
+INFO: [HLS 200-10] On os Ubuntu 18.04.1 LTS
+INFO: [HLS 200-10] In directory '/home/lzc/workspace/decoder/vivado_rtl_kernel/Vadd_A_B_ex/imports/hls'
+Sourcing Tcl script './run_hls.tcl'
+INFO: [HLS 200-10] Creating and opening project '/home/lzc/workspace/decoder/vivado_rtl_kernel/Vadd_A_B_ex/imports/hls/prj'.
+INFO: [HLS 200-10] Creating and opening solution '/home/lzc/workspace/decoder/vivado_rtl_kernel/Vadd_A_B_ex/imports/hls/prj/sol'.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-10] Adding design file '../Vadd_A_B_cmodel.cpp' to the project
+WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement.
+INFO: [HLS 200-435] Setting 'config_sdx -optimization_level' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=0
+INFO: [HLS 200-435] Setting 'config_export -vivado_optimization_level' configuration: config_export -vivado_phys_opt=none
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_compile -pipeline_loops=64
+INFO: [XFORM 203-1171] Pipeline the innermost loop with trip count more than 64 or its parent loop when its trip count is less than or equal 64.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_compile -name_max_length=256
+INFO: [XFORM 203-1161] The maximum of name length is set into 256.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_schedule -enable_dsp_full_reg=1
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_rtl -register_reset_num=3
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_rtl -module_auto_prefix=1
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_interface -m_axi_addr64=1
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty 27%
+WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-483] The 'config_rtl -auto_prefix' command is deprecated and will be removed in a future release. Use 'config_rtl -module_auto_prefix' as its replacement.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../Vadd_A_B_cmodel.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:12 ; elapsed = 00:01:25 . Memory (MB): peak = 836.227 ; gain = 128.000 ; free physical = 294 ; free virtual = 6438
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:12 ; elapsed = 00:01:25 . Memory (MB): peak = 836.227 ; gain = 128.000 ; free physical = 294 ; free virtual = 6438
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:13 ; elapsed = 00:01:28 . Memory (MB): peak = 836.227 ; gain = 128.000 ; free physical = 289 ; free virtual = 6439
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:15 ; elapsed = 00:01:38 . Memory (MB): peak = 836.227 ; gain = 128.000 ; free physical = 284 ; free virtual = 6433
+INFO: [XFORM 203-510] Pipelining loop 'Loop-3' (../Vadd_A_B_cmodel.cpp:55) in function 'Vadd_A_B' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-6' (../Vadd_A_B_cmodel.cpp:76) in function 'Vadd_A_B' automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:17 ; elapsed = 00:01:54 . Memory (MB): peak = 836.227 ; gain = 128.000 ; free physical = 223 ; free virtual = 6373
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 4096 on port 'm00_axi' (../Vadd_A_B_cmodel.cpp:52:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 4096 on port 'm01_axi' (../Vadd_A_B_cmodel.cpp:73:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 4096 on port 'm00_axi' (../Vadd_A_B_cmodel.cpp:60:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 4096 on port 'm01_axi' (../Vadd_A_B_cmodel.cpp:81:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:02:17 . Memory (MB): peak = 836.227 ; gain = 128.000 ; free physical = 173 ; free virtual = 6337
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Vadd_A_B' ...
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Vadd_A_B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'memcpy.m00_axi_input_buffer.A'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'memcpy.A.m00_axi_output_buffer.gep'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'memcpy.m01_axi_input_buffer.B'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'memcpy.B.m01_axi_output_buffer.gep'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 138.49 seconds; current allocated memory: 99.322 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.18 seconds; current allocated memory: 99.866 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Vadd_A_B' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Vadd_A_B/m00_axi' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Vadd_A_B/m01_axi' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Vadd_A_B/scalar00' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Vadd_A_B/A' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Vadd_A_B/B' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Vadd_A_B' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'scalar00', 'A' and 'B' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Vadd_A_B'.
+INFO: [HLS 200-111]  Elapsed time: 1.22 seconds; current allocated memory: 101.649 MB.
+INFO: [RTMG 210-278] Implementing memory 'Vadd_A_B_m00_axi_input_buffer_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:22 ; elapsed = 00:02:31 . Memory (MB): peak = 836.227 ; gain = 128.000 ; free physical = 127 ; free virtual = 6301
+INFO: [VHDL 208-304] Generating VHDL RTL for Vadd_A_B.
+INFO: [VLOG 209-307] Generating Verilog RTL for Vadd_A_B.
+INFO: [HLS 200-112] Total elapsed time: 150.63 seconds; peak allocated memory: 101.649 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Thu Jul 18 09:05:22 2019...

@@ -1,0 +1,19 @@
+#
+# An unexpected error has occurred (11)
+#
+Stack:
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb6aadb) [0x7fd207e79adb]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(JVM_handle_linux_signal+0xbb) [0x7fd207e7ee1b]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xb647b8) [0x7fd207e737b8]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3ef20) [0x7fd251534f20]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib/libjimage.so(+0x3fb2) [0x7fd206887fb2]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib/libjimage.so(+0x4b8c) [0x7fd206888b8c]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib/libjimage.so(JIMAGE_FindResource+0xba) [0x7fd20688905a]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0x5aae8e) [0x7fd2078b9e8e]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0x5ae0a0) [0x7fd2078bd0a0]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xcbcd34) [0x7fd207fcbd34]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xcbd8f1) [0x7fd207fcc8f1]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0xcbec4b) [0x7fd207fcdc4b]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0x648c34) [0x7fd207957c34]
+/home/lzc/document/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/lib//server/libjvm.so(+0x82b1ca) [0x7fd207b3a1ca]
+[0x7fd1f01b6f04]

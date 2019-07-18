@@ -1,0 +1,4 @@
+#!/bin/sh
+lli=${LLVMINTERP-lli}
+exec $lli \
+    /home/lzc/workspace/decoder/vivado_rtl_kernel/Vadd_A_B_ex/imports/hls/prj/sol/.autopilot/db/a.g.0.bc ${1+"$@"}
